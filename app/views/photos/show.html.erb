@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <h2 class="title"><%= @photo.title %></h2>
+  <p><%= @photo.date %></p>
+  <%= image_tag @photo.file_location.url, class: "img-responsive" %>
+  <p><%= simple_format(@photo.description) %></p>
+</div>
+
+<button type="buttom" class="btn btn-default btn-sm-05">
+  <%= link_to 'Back', photos_path %>
+</button>
